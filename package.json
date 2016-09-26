@@ -1,0 +1,31 @@
+{
+  "name": "stickynotestodo",
+  "version": "1.0.0",
+  "description": "Application built with Flux and React.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manan057/MovieFinder.git"
+  },
+  "author": "Manan Rana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manan057/MovieFinder/issues"
+  },
+  "homepage": "https://github.com/manan057/MovieFinder#readme",
+  "devDependencies": {
+    "browserify": "*",
+    "flux": "*",
+    "gulp": "*",
+    "reactify": "*",
+    "vinyl-source-stream": "*",
+    "object-assign": "*"
+  },
+  "dependencies": {
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  }
+}
