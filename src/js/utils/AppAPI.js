@@ -23,5 +23,20 @@ module.exports = {
         console.log(err);
       }.bind(this)
     });
+  },
+
+  removeNote: function(noteId) {
+    $.ajax({
+      url: 'https://api.mongolab.com/api/1/databases/stickynotestodo/collections/notes/'+noteId+'?apiKey=a4hAXvsB3tX_wCAWZSYlgPELRRPTNpWp',
+      type: "DELETE",
+      async: true,
+      timeout: 300000,
+      success: function(data){
+        console.log('Note deleted...');
+      }.bind(this),
+      error: function(xhr, status, err){
+        console.log(err);
+      }.bind(this)
+    });
   }
 }

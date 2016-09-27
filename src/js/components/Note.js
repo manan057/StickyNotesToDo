@@ -6,11 +6,16 @@ var Note = React.createClass({
   render: function() {
     return(
       <div className="column">
-        <div className="note">
+        <div className="note" onDoubleClick={this.removeNote.bind(this, this.props.note._id)}>
           <p>{this.props.note.text}</p>
         </div>
       </div>
     );
+  },
+
+  removeNote: function(i, j) {
+    // console.log(i.$oid);
+    AppActions.removeNote(i.$oid);
   }
 });
 
